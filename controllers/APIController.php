@@ -21,6 +21,7 @@ class APIController
         //almacena la cita y devuelve el id
         $cita = new Cita($_POST);
         $resultado = $cita->guardar();
+        
 
         $id = $resultado['id'];
         //almacena los servicios con el id de la cita
@@ -38,6 +39,7 @@ class APIController
         //retornamos una respuesta
        
         echo json_encode(['resultado' =>$resultado]);
+
     }
 
     public static function eliminar(){
