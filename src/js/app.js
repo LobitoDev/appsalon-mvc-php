@@ -354,7 +354,13 @@ async function reservarCita() {
       body: datos,
     });
 
+    //console.log("primer cc:",respuesta.json());    
+
     const resultado = await respuesta.json();
+
+    //console.log(respuesta.json()); 
+    console.log("segundo cc",resultado);
+    
 
     console.log(resultado.resultado);
     console.log(resultado);
@@ -380,3 +386,5 @@ async function reservarCita() {
     });
   }
 }
+
+

@@ -1,10 +1,11 @@
 <?php
 
-function debuguear($variable) : string {
+function debuguear($variable): string {
+    echo "Entrando en la función debuguear()...<br>"; // Esto te ayuda a verificar que la función está siendo llamada
     echo "<pre>";
     var_dump($variable);
     echo "</pre>";
-    exit;
+    exit; // Esto detiene la ejecución del script después de mostrar los datos
 }
 
 // Escapa / Sanitizar el HTML

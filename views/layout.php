@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+   
 
     <?php 
         echo $script ?? '';
